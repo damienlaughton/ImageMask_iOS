@@ -13,6 +13,7 @@
 		6DCD218D1B024CC900ACCF19 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DCD218C1B024CC900ACCF19 /* Images.xcassets */; };
 		6DCD21901B024CC900ACCF19 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DCD218E1B024CC900ACCF19 /* LaunchScreen.xib */; };
 		6DCD219C1B024CC900ACCF19 /* ImageMaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCD219B1B024CC900ACCF19 /* ImageMaskTests.swift */; };
+		6DCD21A61B024E5500ACCF19 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCD21A51B024E5500ACCF19 /* UIImageExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		6DCD21951B024CC900ACCF19 /* ImageMaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageMaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DCD219A1B024CC900ACCF19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DCD219B1B024CC900ACCF19 /* ImageMaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageMaskTests.swift; sourceTree = "<group>"; };
+		6DCD21A51B024E5500ACCF19 /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		6DCD21821B024CC900ACCF19 /* ImageMask */ = {
 			isa = PBXGroup;
 			children = (
+				6DCD21A51B024E5500ACCF19 /* UIImageExtension.swift */,
 				6DCD21851B024CC900ACCF19 /* AppDelegate.swift */,
 				6DCD21871B024CC900ACCF19 /* ViewController.swift */,
 				6DCD21891B024CC900ACCF19 /* Main.storyboard */,
@@ -214,6 +217,7 @@
 			files = (
 				6DCD21881B024CC900ACCF19 /* ViewController.swift in Sources */,
 				6DCD21861B024CC900ACCF19 /* AppDelegate.swift in Sources */,
+				6DCD21A61B024E5500ACCF19 /* UIImageExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

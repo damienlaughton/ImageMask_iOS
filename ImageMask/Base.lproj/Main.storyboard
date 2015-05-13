@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="ImageMask" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +15,58 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Starscape" translatesAutoresizingMaskIntoConstraints="NO" id="mkX-Gm-HRu">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HTr-GW-5x1">
+                                <rect key="frame" x="232" y="225" width="135" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="b2o-ez-2S8"/>
+                                    <constraint firstAttribute="height" constant="150" id="v4W-uK-Nte"/>
+                                </constraints>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PbU-ZC-e2W">
+                                <rect key="frame" x="168" y="33" width="135" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="CSu-nN-MVu"/>
+                                    <constraint firstAttribute="height" constant="150" id="U7E-JT-Fqp"/>
+                                </constraints>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Bv-RZ-W4l">
+                                <rect key="frame" x="348" y="410" width="135" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="EUo-nR-Bca"/>
+                                    <constraint firstAttribute="height" constant="150" id="H25-x2-eAg"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="mkX-Gm-HRu" secondAttribute="centerY" id="5Rh-sA-09r"/>
+                            <constraint firstAttribute="centerX" secondItem="HTr-GW-5x1" secondAttribute="centerX" id="87d-Vb-ZDT"/>
+                            <constraint firstAttribute="height" secondItem="mkX-Gm-HRu" secondAttribute="height" id="F8K-Z0-Cof"/>
+                            <constraint firstItem="PbU-ZC-e2W" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="168" id="O6J-x9-1lm"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="0Bv-RZ-W4l" secondAttribute="bottom" constant="40" id="RvT-us-bA6"/>
+                            <constraint firstAttribute="trailing" secondItem="0Bv-RZ-W4l" secondAttribute="trailing" constant="117" id="ZYt-YS-116"/>
+                            <constraint firstAttribute="centerX" secondItem="mkX-Gm-HRu" secondAttribute="centerX" id="neC-0H-QaJ"/>
+                            <constraint firstAttribute="width" secondItem="mkX-Gm-HRu" secondAttribute="width" id="w85-Hy-mmA"/>
+                            <constraint firstItem="PbU-ZC-e2W" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="13" id="yb3-6n-UAT"/>
+                            <constraint firstAttribute="centerY" secondItem="HTr-GW-5x1" secondAttribute="centerY" id="zaR-cG-O2Q"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView1" destination="HTr-GW-5x1" id="SuC-RR-tIs"/>
+                        <outlet property="imageView2" destination="PbU-ZC-e2W" id="Mzs-ik-5Nk"/>
+                        <outlet property="imageView3" destination="0Bv-RZ-W4l" id="2g7-he-IsF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="542" y="422"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Starscape" width="600" height="600"/>
+    </resources>
 </document>
